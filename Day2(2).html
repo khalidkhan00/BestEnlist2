@@ -1,0 +1,26 @@
+<!-- Write a javscript function which returns random 6 digit numbers -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button onclick="fun()">Click Me</button>
+    <input type="text" placeholder="number is" id="task">
+    <script>
+
+        function fun()
+        {
+            const res = Math.floor(Math.random() * 999999) + 100000;
+            document.getElementById("task").value = res;
+            //document.write(res);
+        }
+
+    </script>
+    
+</body>
+</html>
